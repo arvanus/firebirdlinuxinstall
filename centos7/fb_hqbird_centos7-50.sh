@@ -55,7 +55,7 @@ cd $TMP_DIR/fb
 
 echo Running FB installer =====================================================
 
-yes 'masterkey' | ./install.sh
+yes "${ISC_PASSWORD:-masterkey}" | ./install.sh
 #./install.sh -silent
 cd $OLD_DIR
 #cp -rf $TMP_DIR/conf/*.conf /opt/firebird
